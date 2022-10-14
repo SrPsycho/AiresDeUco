@@ -1,0 +1,124 @@
+:root{
+    /* Colore4s */
+    --cyber_grape:#564787;
+    --lavanda_gris:#DBCBD8;
+    --blanco_celeste:#F2FDFF;
+    /* Fuentes */
+    --titulos:'Cinzel', serif;
+    --subtitulos:'Tangerine', cursive;
+    --fuente_general:'Montserrat', sans-serif;
+}
+
+.bodBG{
+    background-image: url(/assets/images/Bodega/Background.jpg);
+    background-position: center;
+}
+.menuHamb__bod{
+    display: none;
+    background: rgba(173, 160, 254, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(173, 160, 254, 0.3);
+    width: 150px;
+    position: absolute;
+    right: 25px;
+    top: 75px;
+    -webkit-animation: scale-in-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.coleccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.vinoteca{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:25px;
+}
+.vinos__contenedor{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: 600px;
+    border: 5px solid var(--cyber_grape);
+}
+.vinosImg{
+    width: 80%;
+}
+.vinosImg:hover{
+    filter: grayscale();
+}
+.produccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imgBod{
+    width: 75%;
+    border: 5px solid var(--cyber_grape);
+    border-radius: 15px;
+}
+/* Prueba */
+.imagenContenedor{
+    width: 300px;
+    height: 500px;
+    background-image: url(/assets/images/Bodega/vinos/3.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.segundaImagen{
+    background-image: url(/assets/images/Bodega/vinos/2.png);
+}
+.terceraImagen{
+    background-image: url(/assets/images/Bodega/vinos/1.png);
+}
+.imagenContenedor:hover div.info{ 
+    opacity: 1;
+    background-color: rgba(31, 31, 31, 0.473);
+}
+.titulo__vino{
+    margin-top: 30%;
+    font-size: 2rem;
+    font-family: var(--titulos);
+    color: var(--cyber_grape);
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    
+}
+.descrip__vino{
+    padding-top: 25px;
+    text-align: justify;
+    color: white;
+    margin: 0 10px 0 10px;
+    text-shadow: -2px 0px 13px rgba(0,0,0,0.6);
+}
+.info{
+    width: 300px;
+    height: 500px;
+    font-size: 1.1rem;
+    font-family: var(--fuente_general);
+    overflow: hidden;
+    opacity:0;
+    transition: opacity 0.3s;
+}
+@media (max-width:850px){
+    .vinoteca{
+        flex-direction: column;
+    }
+    .vinos__contenedor{
+        width: 90%;
+        height: 450px;
+    }
+    .imgBod{
+        width: 95%;
+    }
+
+}

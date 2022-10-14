@@ -1,0 +1,317 @@
+:root{
+    /* Colore4s */
+    --cyber_grape:#564787;
+    --lavanda_gris:#DBCBD8;
+    --blanco_celeste:#F2FDFF;
+    /* Fuentes */
+    --titulos:'Cinzel', serif;
+    --subtitulos:'Tangerine', cursive;
+    --fuente_general:'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: var(--blanco_celeste);
+}
+
+header{
+    z-index: 1;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: transparent;
+}
+a{
+    text-decoration: none;
+    font-family: var(--fuente_general);
+    color: var(--cyber_grape);
+}
+.fotoHeader{
+    background-image: url(/assets/images/Viñedo\ 2.jpg);
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    border-bottom: 5px solid var(--cyber_grape);
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    justify-content: end;
+   
+}
+.sticky{
+    /* Agregar esto despues de pasar el header */
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+.abs{
+    position: fixed;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+    z-index: 1;
+    filter: grayscale();
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.none{
+    display: none;
+}
+.menu__hamb{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    height: 80px;
+    margin: 15px 25px 0px 25px;
+    color: black;
+    z-index: 1;
+}
+.menu__hamb:hover{
+    transform: scale(1.1);
+    transition-duration: 400ms;
+}
+.menu__hamb:active{
+    transform: translate(-2px);
+    transition-duration: 400ms;
+}
+.menuHamb{
+    display: none;
+    /* From https://css.glass */
+    background: rgba(173, 160, 254, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(173, 160, 254, 0.3);
+    width: 150px;
+    position: absolute;
+    right: 25px;
+    top: 75px;
+    -webkit-animation: scale-in-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.listaHamb{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px;
+    gap: 25px;
+}
+.linkServ{
+    color: var(--cyber_grape);
+    text-decoration: none;
+}
+main{
+    background-color: var(--blanco_celeste);
+    margin: 0px 50px 0px 50px;
+}
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.tituloPrincipal{
+    font-family: var(--titulos);
+    font-size: 5rem;
+    color: var(--cyber_grape);
+    margin-top: 25px;
+    text-align: center;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+.separador__uva{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+.masSeparado{
+    margin-top: 55px;
+}
+.subrayado{
+    background-color: var(--cyber_grape);
+    width: 50%;
+    height: 5px;
+    border-radius: 15px;
+}
+.uva{
+    width: 65px;
+}
+.descripcion{
+    text-align: justify;
+    font-size: 1.5rem;
+    font-family: var(--fuente_general);
+    font-weight: 300;
+    width: 75%;
+    padding: 25px 55px 5px 55px;
+    margin-bottom: 25px;
+}
+.divisor{
+    background-color: var(--cyber_grape);
+    height: 5px;
+}
+
+.servicios{
+    display: flex;
+    justify-content: space-around;
+}
+
+.resort,.bodega,.restaurant{
+    border: 2px solid var(--cyber_grape);
+    width: 30%;
+    border-radius: 15px;
+}
+.resort:hover,.bodega:hover,.restaurant:hover{
+   transform: scale(1.1);
+   box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+   transition-duration: 400ms;
+}
+.resort__interior,.bodega__interior,.resto__interior{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.miniLinea{
+    border-radius: 5px;
+    height: 5px;
+    width: 150px;
+    background-color: var(--cyber_grape);
+}
+.subtitulo{
+    font-family: var( --titulos);
+    font-size: 1.5rem;
+    padding: 15px;
+    color: var(--cyber_grape);
+}
+.descripcion__serv{
+    padding: 35px;
+}
+
+/* Slider de fotos */
+* {box-sizing:border-box}
+
+
+.sliderFotos {
+  max-width: 1000px;
+  position: relative;
+  margin: 100px auto ;
+  border: 5px solid var(--cyber_grape);
+  border-radius: 15px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Caption text */
+.text {
+  color: var(--blanco_celeste);
+  font-family: var(--fuente_general);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: var(--blanco_celeste);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+ 
+/* Novedades */
+
+.grande{
+    color: var(--cyber_grape);
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+.contenedor__nov{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 50px 120px 0px 120px;
+}
+.img__novedades{
+    width: 100%;
+    border-radius: 15px;
+}
+.detalles__nov{
+    text-align: justify;
+    font-size: 1.2rem;
+    font-family: var(--fuente_general);
+}
+.nov1,.nov2,.nov3,.nov4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--cyber_grape);
+    width: 40%;
+    height: 550px;
+    padding: 25px;
+    border-radius: 15px;
+}
+.nov1:hover,.nov2:hover,.nov3:hover,.nov4:hover{
+    transition-duration: 400ms;
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+}
+
+/* Footer */
+footer{
+    background-color: var(--cyber_grape);
+    height: 300px;
+    margin-top: 50px;
+    font-family: var(--fuente_general);
+}
+.info__footer{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor__footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.redes{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+}
+.logoRedes{
+    color: var(--blanco_celeste);
+}
+.copy{
+    margin: 25px;
+    text-align: center;
+}

@@ -1,0 +1,62 @@
+:root{
+    /* Colore4s */
+    --cyber_grape:#564787;
+    --lavanda_gris:#DBCBD8;
+    --marron_oscuro:#292727;
+    --marron_claro:#826754;
+    --blanco_celeste:#F2FDFF;
+    /* Fuentes */
+    --titulos:'Cinzel', serif;
+    --subtitulos:'Tangerine', cursive;
+    --fuente_general:'Montserrat', sans-serif;
+}
+
+@media (max-width:850px){
+    main{
+        margin: 15px;
+    }
+    header{
+        height: 5rem;
+    }
+    .fotoHeader{
+            background-image: url(/assets/images/Viñedo\ responsive.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-bottom: 5px solid var(--cyber_grape);
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+    .descripcion{
+        padding: auto;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .servicios{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .resort,.bodega,.restaurant{
+        width: 90%;
+    }
+    .img__novedades{
+        width: 90%;
+    }
+    .contenedor__nov{
+        margin: auto;
+        flex-direction: column;
+    }
+    .nov1,.nov2,.nov3,.nov4{
+        width: 90%;
+        height: 550px;
+        padding: 15px;
+     
+    }
+    .cel{
+        font-size: 2rem;
+       }
+}
